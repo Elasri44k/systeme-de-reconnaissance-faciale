@@ -1,0 +1,6 @@
+Flask>=2.2.5  
+Flask-Cors>=4.0.0  
+deepface>=0.0.93  
+opencv-python-headless>=4.11.0.86  
+numpy>=1.23.5  
+Pillow>=10.0.0  

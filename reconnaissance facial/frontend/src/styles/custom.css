@@ -1,0 +1,9 @@
+/* Tu peux ajouter des styles personnalisés ici si nécessaire */
+.bg-gradient-custom {
+    background: linear-gradient(to bottom right, #0e4cc9, #4FD1C5);
+  }
+  
+  .shadow-2xl-custom {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  

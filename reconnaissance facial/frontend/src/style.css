@@ -1,0 +1,381 @@
+/* Styles de base pour les boutons */
+
+
+.button {
+  padding: 1rem 2.5rem; /* Espacement interne */
+  font-size: 1.25rem; /* Taille de police */
+  font-weight: 600; /* Poids de la police */
+  border-radius: 1rem; /* Coins arrondis */
+  transition: all 0.3s ease; /* Transition fluide */
+  cursor: pointer; /* Curseur en forme de pointeur */
+  transform: scale(1); /* Échelle normale */
+  border: none; /* Pas de bordure */
+  outline: none; /* Pas de contour */
+  color: white; /* Texte en blanc */
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Dégradé bleu moderne */
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Ombre douce */
+}
+
+
+/* Effet au survol */
+.button:hover {
+  transform: scale(1.05); /* Légère augmentation de taille */
+  background: linear-gradient(135deg, #1072db, #003d80); /* Dégradé plus foncé */
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4); /* Ombre plus prononcée */
+}
+
+/* Effet au clic */
+.button:active {
+  transform: scale(0.98); /* Légère réduction de taille */
+  box-shadow: 0 3px 10px rgba(0, 86, 179, 0.5); /* Ombre plus petite */
+}
+
+/* Style pour le bouton "S'inscrire" quand il est actif */
+.button-register {
+  background-color: #f87171; /* Rouge (tailwind red-600) */
+  color: rgb(203, 14, 14); /* Texte en rouge foncé */
+  box-shadow: 0 4px 6px rgba(23, 23, 255, 0.841); /* Ombre avec une teinte bleue */
+}
+
+/* Effet au survol pour le bouton "S'inscrire" */
+.button-register:hover {
+  transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+/* Style pour le bouton "Vérifier" */
+.button-verify {
+  background-color: #60a5fa; /* Bleu (tailwind blue-600) */
+  color: white; /* Texte en blanc */
+  box-shadow: 0 4px 6px rgb(221, 0, 0); /* Ombre avec une teinte rouge */
+}
+
+/* Effet au survol pour le bouton "Vérifier" */
+.button-verify:hover {
+  transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+/* Style pour les boutons inactifs */
+.button-inactive {
+  background-color: #d1d5db; /* Gris clair */
+  color: #4b5563; /* Gris foncé */
+}
+
+/* Verify.css */
+
+/* Conteneur principal */
+.verify-container {
+  background-color: white;
+  background-position: center;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 32rem;
+  width: 100%;
+  margin: auto;
+
+   /* Pousse l'élément vers la gauche */
+  text-align: center;
+}
+
+
+/* Titre */
+.verify-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3a8a; /* custom-blue */
+  margin-bottom: 1.5rem;
+
+}
+
+/* Champ de sélection de fichier */
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  color: #3b82f6; /* blue-500 */
+  border: 2px dashed #3b82f6; /* blue-500 */
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.file-upload-label:hover {
+  background-color: #eff6ff; /* blue-50 */
+}
+
+.file-upload-input {
+  display: none;
+}
+
+/* Aperçu de l'image */
+.image-preview {
+  max-width: 100%;
+  height: 12rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+
+
+/* Bouton de vérification */
+.verify-button {
+  width: 100%;
+  background-color: #6b21a8; /* custom-purple */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem; /* Espacement en haut */
+}
+
+.verify-button:hover {
+  background-color: #7c3aed; /* purple-700 */
+}
+
+.verify-button:disabled {
+  background-color: #9ca3af; /* gray-400 */
+  cursor: not-allowed;
+}
+
+/* Indicateur de chargement */
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Message d'erreur */
+.error-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #ef4444; /* red-500 */
+}
+/* Register.css */
+
+/* Conteneur principal */
+.register-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 32rem;
+  width: 100%;
+  margin: auto; /* Centrer horizontalement */
+}
+
+/* Titre */
+.register-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3a8a; /* Couleur personnalisée */
+  margin-bottom: 1.5rem;
+}
+
+/* Champ de formulaire */
+.register-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db; /* Gris clair */
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-input:focus {
+  border-color: #f59e0b; /* Jaune-500 */
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2); /* Ombre jaune */
+}
+
+/* Bouton d'enregistrement */
+.register-button {
+  width: 100%;
+  background: linear-gradient(to right, #f59e0b, #ef4444); /* Dégradé jaune à rouge */
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button:hover {
+  transform: scale(1.05); /* Légère augmentation de taille */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+.register-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5); /* Ombre jaune */
+}
+
+/* Message d'erreur ou de succès */
+.register-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #03ea16; /* Rouge-600 */
+  font-size: 0.875rem;
+}
+
+/* Transition de glissement vers la droite */
+.slide-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+/* Conteneur principal */
+.home-header {
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 2rem; /* Espacement en bas */
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 70px;
+}
+
+.home-description {
+  font-size: 1.6rem;
+  color: #000000;
+  line-height: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: blink 2s infinite; /* Animation de clignotement */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+/* Conteneur principal */
+.access-granted-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Carte principale */
+.access-granted-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Effet de flou */
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure légère */
+}
+
+/* Titre */
+.access-granted-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2ecc71; /* Vert vif */
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(46, 204, 113, 0.2); /* Ombre du texte */
+}
+
+/* Texte de bienvenue */
+.access-granted-welcome {
+  font-size: 1.5rem;
+  color: #34495e; /* Gris foncé */
+  margin-top: 1rem;
+}
+
+/* Détails de l'utilisateur */
+.user-details {
+  margin-top: 1.5rem;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #2c3e50; /* Gris très foncé */
+}
+
+.user-details p {
+  margin: 0.5rem 0;
+}
+
+.user-details strong {
+  color: #e74c3c; /* Rouge vif */
+}
+
+/* Bouton de retour */
+.return-button {
+  margin-top: 2rem;
+  background-color: #3498db; /* Bleu vif */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #2980b9; /* Bleu plus foncé */
+  transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+.return-button:active {
+  transform: scale(0.95); /* Légère réduction de taille */
+}
